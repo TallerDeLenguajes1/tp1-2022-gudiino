@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Problema02
+namespace Problema03
 {
     class Program
     {
@@ -8,10 +8,11 @@ namespace Problema02
         {
             try
             {
-                double kilometros, litros_combustible;
-                Console.WriteLine("Ingrese los kilometros conducidos y la cantidad de litros consumidos");
-                kilometros=Convert.ToInt64(Console.ReadLine());
-                litros_combustible=Convert.ToInt64(Console.ReadLine());
+                int kilometros, litros_combustible;//para generar excepacion
+                Console.WriteLine("Ingrese los kilometros recorridos");
+                kilometros=Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingrese la cantidad de litros consumidos");
+                litros_combustible=Convert.ToInt32(Console.ReadLine());
                 double consumoXkilometro;
                 consumoXkilometro=rendimiento(kilometros,litros_combustible);
                 Console.WriteLine("Rendimiento [km/litro] = {0}", consumoXkilometro);
