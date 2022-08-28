@@ -10,16 +10,20 @@ namespace Problema01
             {
                 int num1;
                 Console.WriteLine("Ingrese un número entero");
-                num1=Convert.ToInt32(Console.ReadLine());//se ingresa como prueba un numero grande
+                /*se ingresa como prueba un numero grande y letras*/
+                Console.Write("número = ");
+                num1=Convert.ToInt32(Console.ReadLine());
                 double cuadrado;
                 cuadrado=Math.Pow(num1,2);
                 Console.WriteLine("cuadrado del número = {0}", cuadrado);
-                Console.WriteLine("FIN.");
+                Console.WriteLine("FIN PROGRAMA.");
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
                 Console.WriteLine("Datos igresado no valido o falla en el sistema");
-                Console.WriteLine("FIN.");
+                Console.WriteLine("MENSAJE EXCEPCION:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("FIN EXCEPCION.");
             }   
         }
     }
