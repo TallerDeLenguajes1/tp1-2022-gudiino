@@ -10,25 +10,9 @@ namespace Problema04
     {
         static void Main(string[] args)
         {
-            try
-            {
-                GetProvinciasArgentinas();
-                Console.WriteLine("FIN CODIGO.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Falla en el sistema o conexion con el API");
-                Console.WriteLine("MENSAJE EXCEPCION:");
-                Console.WriteLine(ex.Message);
-                Console.WriteLine("FIN EXCEPCION.");
-            }
-            finally
-            {
-                Console.WriteLine("FIN PROGRAMA");
-            }
+            GetProvinciasArgentinas();
+            Console.WriteLine("FIN CODIGO.");
         }
-
-
         private static void GetProvinciasArgentinas()
         {
             var url = @"https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre";
