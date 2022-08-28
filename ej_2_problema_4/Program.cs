@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -11,8 +10,6 @@ namespace Problema04
     {
         static void Main(string[] args)
         {
-            
-            //***************************************
             try
             {
                 GetProvinciasArgentinas();
@@ -20,9 +17,10 @@ namespace Problema04
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Datos igresado no valido o falla en el sistema");
+                Console.WriteLine("Falla en el sistema o conexion con el API");
+                Console.WriteLine("MENSAJE EXCEPCION:");
                 Console.WriteLine(ex.Message);
-                Console.WriteLine("FIN FALLA.");
+                Console.WriteLine("FIN EXCEPCION.");
             }
             finally
             {
@@ -48,10 +46,20 @@ namespace Problema04
                         using (StreamReader objReader = new StreamReader(strReader))
                         {
                             string responseBody = objReader.ReadToEnd();
-                            ProvinciasArgentina ListProvincias = JsonSerializer.Deserialize<ProvinciasArgentina>(responseBody);
-                            foreach (Provincia Prov in ListProvincias.Provincias)
+                            ProvinciasArgentina? ListProvincias = JsonSerializer.Deserialize<ProvinciasArgentina>(responseBody);
+                            Console.WriteLine("NOMBRE PROVINCIA                                       ID PROVINCIA");
+                            foreach (Provincia Prov in ListProvincias!.Provincias!)
                             {
-                                Console.WriteLine("Provincia: " + Prov.Nombre + " Id: " + Prov.Id);
+                                Console.Write(Prov.Nombre);
+                                int espacio=Prov.Nombre!.Count();
+                                int espacio_final=55-espacio;
+                                for (int i = 0; i < espacio_final; i++)
+                                {
+                                    Console.Write(" ");
+                                }
+                                Console.Write(Prov.Id);
+                                Console.WriteLine();
+                                //Console.WriteLine("Provincia: " + Prov.Nombre + " Id: " + Prov.Id);
                             }
 
                         }
@@ -60,9 +68,10 @@ namespace Problema04
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Problemas de acceso a la API");
-                Console.WriteLine("Falla");
+                Console.WriteLine("Falla en el sistema o conexion con el API");
+                Console.WriteLine("MENSAJE EXCEPCION:");
                 Console.WriteLine(ex.Message);
+                Console.WriteLine("FIN EXCEPCION");
             }
         }
     }

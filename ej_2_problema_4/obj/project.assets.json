@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TP2022\\TPN1\\tp1-2022-gudiino\\ej_2_problema_4\\ej_2_problema_4.csproj",
+      "projectUniqueName": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_2_problema_4\\ej_2_problema_4.csproj",
       "projectName": "ej_2_problema_4",
-      "projectPath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TP2022\\TPN1\\tp1-2022-gudiino\\ej_2_problema_4\\ej_2_problema_4.csproj",
+      "projectPath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_2_problema_4\\ej_2_problema_4.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TP2022\\TPN1\\tp1-2022-gudiino\\ej_2_problema_4\\obj\\",
+      "outputPath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_2_problema_4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
