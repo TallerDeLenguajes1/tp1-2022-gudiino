@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TP2022\\TPN1\\tp1-2022-gudiino\\ej_2_problema-2\\ej_2_problema-2.csproj": {}
+    "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_2_problema_2\\ej_2_problema-2.csproj": {}
   },
   "projects": {
-    "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TP2022\\TPN1\\tp1-2022-gudiino\\ej_2_problema-2\\ej_2_problema-2.csproj": {
+    "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_2_problema_2\\ej_2_problema-2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TP2022\\TPN1\\tp1-2022-gudiino\\ej_2_problema-2\\ej_2_problema-2.csproj",
+        "projectUniqueName": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_2_problema_2\\ej_2_problema-2.csproj",
         "projectName": "ej_2_problema-2",
-        "projectPath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TP2022\\TPN1\\tp1-2022-gudiino\\ej_2_problema-2\\ej_2_problema-2.csproj",
+        "projectPath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_2_problema_2\\ej_2_problema-2.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TP2022\\TPN1\\tp1-2022-gudiino\\ej_2_problema-2\\obj\\",
+        "outputPath": "C:\\DDD\\PU\\2-2-TallerDeLenguaje2\\TPTL2\\TPN1\\tp1-2022-gudiino\\ej_2_problema_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
