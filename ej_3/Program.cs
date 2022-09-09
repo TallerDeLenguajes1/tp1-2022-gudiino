@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using NLog;
 
 namespace Ejercicio3
 {
     class Program
     {
+        private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
         static void Main(string[] args)
         {
             //empleado(string nom, string ape, DateTime fec, int civ, char gne, DateTime fecing, double salario, int carg, int hij){
@@ -30,16 +32,18 @@ namespace Ejercicio3
             {
                 num_empleados = Convert.ToInt32(value);
             }
-            catch (FormatException)
+            catch (FormatException ex)
             {
                 Console.WriteLine("Valor invalido '{0}'.", value);
                 Console.WriteLine("Intentelo de nuevo");
+                Logger.Info(ex);
                 return;
             }
-            catch (OverflowException)
+            catch (OverflowException ex)
             {
                 Console.WriteLine("'{0}' es un numero que esta fuera del rango.", value);
                 Console.WriteLine("Intentelo de nuevo");
+                Logger.Debug(ex);
                 return;
             }
             for (int i = 0; i < num_empleados; i++)
