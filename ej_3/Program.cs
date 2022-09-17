@@ -36,14 +36,14 @@ namespace Ejercicio3
             {
                 Console.WriteLine("Valor invalido '{0}'.", value);
                 Console.WriteLine("Intentelo de nuevo");
-                Logger.Info(ex);
+                Logger.Info(ex,"formato ingresado invalido, no es numero");
                 return;
             }
             catch (OverflowException ex)
             {
                 Console.WriteLine("'{0}' es un numero que esta fuera del rango.", value);
                 Console.WriteLine("Intentelo de nuevo");
-                Logger.Debug(ex);
+                Logger.Debug(ex, "valor ingresado esta fuera de rango");
                 return;
             }
             for (int i = 0; i < num_empleados; i++)
